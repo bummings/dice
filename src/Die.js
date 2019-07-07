@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Die extends Component {
-  state = { number: 'six' };
+  state = { number: 'four' };
   render() {
     return (
       <div className='die'>
