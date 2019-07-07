@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
 class Die extends Component {
-  state = { number: 'four' };
+  state = { number: 'one' };
   render() {
     return (
-      <div className='container'>
-        {/* <i className='fas fa-dice-one' /> */}
-
-        <i className={`die fas fa-dice-${this.state.number}`} />
+      <div className='die__container'>
+        <i className={`die fas fa-dice-${this.props.face}`} />
       </div>
     );
   }
