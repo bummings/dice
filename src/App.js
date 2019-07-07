@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <Die />
+      <Die face='five' />
       <h1 className='die__header'>bruh</h1>
     </div>
   );
