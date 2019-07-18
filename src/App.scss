@@ -2,9 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:700&display=swap');
 
+@import './sass/components/die.scss';
+@import './sass/components/game.scss';
+
 .App {
   text-align: center;
-  background-color: darksalmon;
+  background-color: #707040;
+  color: wheat;
   height: 100vh;
   display: flex;
   flex-direction: column;

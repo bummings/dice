@@ -1,0 +1,24 @@
+.game {
+  background-color: wheat;
+
+  &__headline {
+    font-size: 10rem;
+  }
+
+  &__score {
+    margin-bottom: 9rem;
+    font-size: 14rem;
+  }
+
+  &__kill {
+    // display: flex;
+    justify-content: center;
+    // align-items: center;
+    color: red;
+    height: 24vh;
+    width: 55vh;
+    font-size: 8rem;
+    background-color: wheat;
+    font-family: Alegreya SC;
+  }
+}
