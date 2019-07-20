@@ -1,0 +1,13 @@
+.lotto {
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    border-radius: 50%;
+    background-color: red;
+    height: 18rem;
+    width: 18rem;
+    margin: 0;
+  }
+}
