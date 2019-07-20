@@ -14,11 +14,12 @@ class Game extends Component {
   render() {
     return (
       <div>
-        <h1 className='game__headline'>take it EZ, bruh</h1>
+        <h1 className='game__headline'>immutable state pattern</h1>
         <h3 className='game__score'>{this.state.score}</h3>
         <button className='game__kill' onClick={this.singleKill}>
-          KILL
+          plus
         </button>
+        <h2>{this.props.name}</h2>
       </div>
     );
   }

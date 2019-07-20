@@ -1,6 +1,6 @@
 import React from 'react';
 import Game from './Game';
-import RollDice from './RollDice';
+// import RollDice from './RollDice';
 import './App.scss';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
       <div className='die'>
         {/* <RollDice /> */}
-        <Game />
+        <Game name='faux' />
       </div>
       {/* <h1 className='header'>what did you uh</h1> */}
     </div>
