@@ -4,11 +4,20 @@ import LottoBall from './LottoBall';
 class Lotto extends Component {
   constructor(props) {
     super(props);
-    this.state = { numbers: [22, 66, 44] };
+    this.state = { numbers: Array.from({ length: this.props.balls }) };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  generate() {
+    this.setState(currentState => ({
+      numbers: currentState.numbers.map(n =>
+        Math.floor(Math.random() * this.props.maxNum + 1)
+      )
+    }));
   }
 
   handleClick() {
-    console.log('ok bruh');
+    this.generate();
   }
 
   render() {
@@ -20,7 +29,7 @@ class Lotto extends Component {
           ))}
         </div>
         <button onClick={this.handleClick} className='lotto__btn'>
-          Spin
+          Generate
         </button>
       </div>
     );

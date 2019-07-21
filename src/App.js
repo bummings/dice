@@ -8,10 +8,8 @@ function App() {
   return (
     <div className='App'>
       <div className='die'>
-        <Lotto title='game one' balls={4} />
-        {/* <RollDice /> */}
+        <Lotto title='game one' balls={6} maxNum={30} />
       </div>
-      {/* <h1 className='header'>what did you uh</h1> */}
     </div>
   );
 }
