@@ -1,11 +1,15 @@
 .lotto {
   &__balls {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 2rem;
   }
 
   &__btn {
     background-color: red;
+    color: wheat;
+    font-size: 4rem;
+    padding: 2rem;
   }
 
   &__ball {
@@ -13,11 +17,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 10rem;
+    font-size: 8rem;
     border-radius: 50%;
     background-color: red;
-    height: 18rem;
-    width: 18rem;
+    height: 14rem;
+    width: 14rem;
     margin: 1rem;
   }
 }

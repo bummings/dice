@@ -6,6 +6,11 @@ class Lotto extends Component {
     super(props);
     this.state = { numbers: [22, 66, 44] };
   }
+
+  handleClick() {
+    console.log('ok bruh');
+  }
+
   render() {
     return (
       <div className='lotto'>
@@ -14,7 +19,9 @@ class Lotto extends Component {
             <LottoBall number={num} />
           ))}
         </div>
-        <button className='lotto__btn'>k</button>
+        <button onClick={this.handleClick} className='lotto__btn'>
+          Spin
+        </button>
       </div>
     );
   }
